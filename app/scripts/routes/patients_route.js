@@ -47,8 +47,8 @@ Fhir.PatientsRoute = Ember.Route.extend({
 					patients.pushObject(newRecord);
 				}
 			});
+			console.log("Returning " + patients.length + " patients");
 		});
-
 		return patients;
 	}
 });

@@ -1,0 +1,20 @@
+<h1>Resultados de laboratorio</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Autor</th>
+			<th>Resumen</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each diagnostic_report in controller.model}}
+			<tr>
+				<td>{{diagnostic_report.id}}</td>
+				<td>{{diagnostic_report.authorName}}</td>
+				<td>{{{diagnostic_report.summary}}}</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>

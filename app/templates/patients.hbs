@@ -13,9 +13,9 @@
 				</tr>
 			</thead>
 			<tbody>
-				{{#each patient in controller}}
+				{{#each patient in controller.model}}
 					<tr>
-						<td>{{#link-to "patient" patient.id}}{{patient.id}}{{/link-to}}</td>
+						<td>{{#link-to "patient" patient}}{{patient.id}}{{/link-to}}</td>
 						<td>{{patient.given}}</td>
 						<td>{{patient.family}}</td>
 						<td>{{patient.sex}}</td>
