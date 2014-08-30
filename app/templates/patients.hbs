@@ -1,0 +1,28 @@
+<h1 class="page-header">Pacientes</h1>
+
+<div class="row">
+	<div class="col-md-12">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Nombre</th>
+					<th>Apellidos</th>
+					<th>Sexo</th>
+					<th>Fecha de nacimiento</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each patient in controller}}
+					<tr>
+						<td>{{patient.id}}</td>
+						<td>{{patient.given}}</td>
+						<td>{{patient.family}}</td>
+						<td>{{patient.sex}}</td>
+						<td>{{patient.birthDate}}</td>
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</div>
