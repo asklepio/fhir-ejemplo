@@ -15,7 +15,7 @@
 			<tbody>
 				{{#each patient in controller}}
 					<tr>
-						<td>{{patient.id}}</td>
+						<td>{{#link-to "patient" patient.id}}{{patient.id}}{{/link-to}}</td>
 						<td>{{patient.given}}</td>
 						<td>{{patient.family}}</td>
 						<td>{{patient.sex}}</td>

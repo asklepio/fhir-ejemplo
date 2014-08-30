@@ -5,5 +5,5 @@ Fhir.Patient = Ember.Object.extend({
 	sex: null,
 	birthDate: null,
 	phone: null,
-	address: null,
+	address: null
 });
